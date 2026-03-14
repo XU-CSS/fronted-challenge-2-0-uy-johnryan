@@ -180,10 +180,10 @@ body {
 }
 
 .project-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
-  margin-top: 12px;
-}
+} 
 
 @media (min-width: 800px) {
   .project-grid {
@@ -192,10 +192,7 @@ body {
 }
 
 .project {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 12px;
-  background: #fff;
+  flex: 1 1 250px;
 }
 
 .project-title {
